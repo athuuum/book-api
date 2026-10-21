@@ -1,0 +1,102 @@
+.add-book-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    background-color: rgb(0 0 0 / 25%);
+    backdrop-filter: blur(5px);
+}
+
+.add-book-modal {
+    width: min(100%, 420px);
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #f6efef;
+    box-shadow: 0 12px 36px rgb(0 0 0 / 20%);
+}
+
+.add-book-modal h2 {
+    margin: 0 0 20px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background-color: #dbdbdb;
+}
+
+.add-book-modal form {
+    display: grid;
+    gap: 12px;
+}
+
+.add-book-modal input {
+    min-width: 0;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    font: inherit;
+}
+
+.author-search {
+    position: relative;
+}
+
+.author-search input {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.author-suggestions {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 0;
+    left: 0;
+    max-height: 180px;
+    margin: 4px 0 0;
+    padding: 4px;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 16%);
+    list-style: none;
+}
+
+.author-suggestions button {
+    width: 100%;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.author-suggestions button:hover,
+.author-suggestions button:focus-visible {
+    background-color: #eee4d8;
+}
+
+.add-book-modal form button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eee4d8;
+    font: inherit;
+    cursor: pointer;
+}
+
+.add-book-modal form button:hover {
+    background-color: #c9beb2;
+}
+
+.add-book-modal form button:active {
+    background-color: #999188;
+}
+
+.add-book-modal [role="alert"] {
+    margin: 0;
+    color: #a12622;
+}

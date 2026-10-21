@@ -1,0 +1,68 @@
+.books-table-container {
+    margin: 16px;
+    overflow-x: auto;
+}
+
+.books-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.books-table caption {
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.books-table th,
+.books-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.books-table th {
+    background-color: #eee4d8;
+}
+
+.books-table tbody tr:nth-child(even) {
+    background-color: #f6efef;
+}
+
+.books-table-row {
+    cursor: pointer;
+}
+
+.books-table-row:hover,
+.books-table-row:focus-visible {
+    background-color: #eee4d8;
+    outline: 2px solid #c9beb2;
+    outline-offset: -2px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+
+.search-bar-container button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #eee4d8;
+    cursor: pointer;
+}
+
+.search-bar-container button:hover{
+    background-color: #c9beb2;
+
+}
+
+.search-bar-container button:active{
+
+    background-color: #999188;
+
+}
